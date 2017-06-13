@@ -1,0 +1,134 @@
+html, body, .heading .flag-container, .division-container {
+  height: 100%;
+  width: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #47525E; }
+
+.boxer-pic {
+  height: 280px; }
+
+#card, .front, .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.5%; }
+
+.information-container {
+  width: 380px;
+  height: 280px; }
+
+.heading {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F0EDF7; }
+  .heading .main-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 30px;
+    margin-top: 20px; }
+  .heading .flag-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px; }
+    .heading .flag-container .flag {
+      height: 25px;
+      width: 40px; }
+  .heading .alias-container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px; }
+
+.back-heading {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F0EDF7; }
+
+.back-main-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 15px; }
+
+.age-container {
+  display: flex;
+  background-color: #328CC1;
+  font-size: 20px;
+  width: 100%;
+  height: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  color: white; }
+
+.size-info {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: #0B3C5D;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px; }
+
+.division-container {
+  background-color: #EDFFAC;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px; }
+
+.record-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EFFAF4;
+  font-size: 50px; }
+  .record-container .record-card, .record-container .record-win, .record-container .record-loss, .record-container .record-draw {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+  .record-container .record-win {
+    background-color: #13CE66; }
+    .record-container .record-win .win-hover {
+      display: none; }
+    .record-container .record-win .win-hover:hover {
+      display: block; }
+  .record-container .record-loss {
+    background-color: #DF2D12; }
+  .record-container .record-draw {
+    background-color: #13BACE; }
+
+.social-media-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 30px; }
+
+i {
+  color: #00aced; }
+
+i:hover {
+  color: #47525E; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,168 @@
+//fonts
+$font-stack: "Roboto", sans-serif;
+//variables for colors
+$heading-text-color: #47525E;
+$heading-background-color: #F0EDF7;
+$division-background-color: #EDFFAC;
+$record-win-color: #13CE66;
+$record-loss-color: #DF2D12;
+$record-draw-color: #13BACE;
+$back-heading-color: #D9B310;
+$age-container-color: #328CC1;
+$size-info-color: #0B3C5D;
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  @extend html;
+  font-family: $font-stack;
+  color: $heading-text-color;
+}
+
+.boxer-pic {
+  height: 280px;
+}
+
+#card, .front, .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.5%;
+}
+.information-container {
+  width: 380px;
+  height: 280px;
+}
+
+.heading  {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $heading-background-color;
+    .main-heading {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    .flag-container {
+      display: flex;
+      @extend html;
+      justify-content: flex-end;
+      margin-right: 20px;
+        .flag {
+          height: 25px;
+          width: 40px;
+        }
+      }
+      .alias-container {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        justify-content: center;
+        flex-direction: row;
+        font-size: 20px;
+      }
+}
+.back-heading  {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $heading-background-color;
+}
+.back-main-heading {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 30px;
+  padding: 15px;
+}
+.age-container {
+  display: flex;
+  background-color: $age-container-color;
+  font-size: 20px;
+  width: 100%;
+  height: 30%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.size-info {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  background-color: $size-info-color;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.division-container {
+  @extend html;
+  background-color: $division-background-color;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.record-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #EFFAF4;
+  font-size: 50px;
+  .record-card {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .record-win {
+    @extend .record-card;
+    background-color: $record-win-color;
+    .win-hover {
+      display: none;
+    }
+    .win-hover:hover {
+      display: block;
+    }
+  }
+  .record-loss {
+    @extend .record-card;
+    background-color: $record-loss-color;
+  }
+  .record-draw {
+    @extend .record-card;
+    background-color: $record-draw-color;
+  }
+}
+.social-media-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 30px;
+}
+i {
+  color: #00aced;
+}
+i:hover {
+  color: $heading-text-color;
+}
